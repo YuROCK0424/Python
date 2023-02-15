@@ -1,0 +1,34 @@
+# Простой калькулятор
+
+from colorama import init
+from colorama import Fore, Back, Style
+init()
+
+print(Fore.WHITE)
+
+q = input("Что делаем? (+, -, *, /): ")
+
+a = float(input("Введи первое число: "))
+b = float(input("Введи второе число: "))
+
+print(Fore.GREEN)
+
+if q == "+":
+	c = a + b
+	print("Результат: " + str(c))
+
+elif q == "-":
+	c = a - b
+	print("Результат: " + str(c))
+
+elif q == "*":
+	c = a * b
+	print("Результат: " + str(c))
+
+elif q == "/":
+	c = a / b
+	print("Результат: " + str(c))
+
+else:
+	print(Fore.RED)
+	print("Выбрана неверная операция!")
